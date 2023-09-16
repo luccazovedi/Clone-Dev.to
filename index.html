@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Um site clonado por Lucca Zovedi">
+  <meta name="keywords" content="Dev.to, bootstrap, clone">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Lucca Zovedi">
+  <meta property="og:title" content="Título da Página">
+  <meta property="og:description" content="Clone - Dev.to - Por Lucca Zovedi">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png">
+  <title>Dev Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.webp" />
+</head>
+
+<body style="background-color: #f5f5f5;">
+  <!-- NAV -->
+  <div class="container" style="max-width: 550px;">
+    <div class="row">
+      <nav class="navbar bg-body fixed-top">
+        <div class="container">
+          <button class="navbar-toggler d-md-none d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex align-items-center">
+            <img src="./assets/img/logo.png" alt="DEV Community" class="navbar-brand" style="max-width: 50px" />
+            <div class="search-container d-none d-md-block">
+              <form action="/action_page.php">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search.." name="search" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" style="font-weight: bolder;">DEV Community</h5>
+              <hr class="solid" />
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <section class="col-md-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5>
+                      <strong>
+                        DEV Community is a community of 1,142,026 amazing developers
+                      </strong>
+                    </h5>
+                    <p class="card-text">
+                      We're a place where coders share, stay up-to-date and grow their
+                      careers..
+                    </p>
+                    <div style="text-align: center">
+                      <button type="button" class="btn active" style="color: #2349b3">
+                        <a href="./account/register.html" style="text-decoration: none;">Create
+                          Account</button></a></a><br />
+                      <button type="button" class="btn" aria-current="page">
+                        <a href="./account/login.html" style="text-decoration: none; color: black;">Log in</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="container mt-5">
+                  <div class="vertical-buttons">
+                    <button class="btn btn">
+                      <i class="fas fa-home"></i> Home
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-podcast"></i> Podcast
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-video-camera"></i> Videos
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-tags"></i> Tags
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-bookmark"></i> FAQ
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-shopping-bag"></i> Forem Shop
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-desktop"></i> Advertise on DEV
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-question"></i> About
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-phone"></i> Contact
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-map-signs"></i> Guides
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-arrow-down"></i> Software Comparisons
+                    </button>
+                    <p style="font-weight: bold;" class="mt-2">Other</p>
+                    <button class="btn btn">
+                      <i class="fas fa-code"></i> Code Of Conduct
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-user-secret"></i> Privacy Policy
+                    </button>
+                    <button class="btn btn">
+                      <i class="fas fa-thumbs-up"></i> Terms Of Use
+                    </button>
+                    <ul class="social-icons mt-3">
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-github"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+                    </ul>
+              </section>
+            </div>
+          </div>
+          <form class="d-flex">
+            <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn d-none d-md-block" aria-current="page">
+              <a href="./account/login.html" style="text-decoration: none; color: black;">Log in</a>
+            </button>
+            <button type="button" class="btn active" style="color: #2349b3">
+              <a href="./account/register.html" style="text-decoration: none;">Create Account</a>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- NAV -->
+  <!-- MAIN -->
+  <div class="container">
+    <div class="row">
+      <section class="col-md-3 d-none d-md-block">
+        <div class="card mb-2" style="margin-top: 80px;">
+          <div class="card-body">
+            <h5>
+              <strong>
+                DEV Community is a community of 1,142,026 amazing developers
+              </strong>
+            </h5>
+            <p class="card-text">
+              We're a place where coders share, stay up-to-date and grow their
+              careers..
+            </p>
+            <div style="text-align: center">
+              <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="btn active" style="color: #2349b3">
+                <a href="./account/register.html" style="text-decoration: none;">Create
+                  Account</button></a></a><br />
+              <button type="button" class="btn" aria-current="page">
+                <a href="./account/login.html" style="text-decoration: none; color: black;">Log in</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="vertical-buttons">
+            <button class="btn btn">
+              <i class="fas fa-home"></i> Home
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-podcast"></i> Podcast
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-video-camera"></i> Videos
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-tags"></i> Tags
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-bookmark"></i> FAQ
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-shopping-bag"></i> Forem Shop
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-desktop"></i> Advertise on DEV
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-question"></i> About
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-phone"></i> Contact
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-map-signs"></i> Guides
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-arrow-down"></i> Software Comparisons
+            </button>
+            <p style="font-weight: bold;" class="mt-2">Other</p>
+            <button class="btn btn">
+              <i class="fas fa-code"></i> Code Of Conduct
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-user-secret"></i> Privacy Policy
+            </button>
+            <button class="btn btn">
+              <i class="fas fa-thumbs-up"></i> Terms Of Use
+            </button>
+            <ul class="social-icons mt-3">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+            </ul>
+            <div>
+              <p style="font-size: 16px; font-weight: bold;" class="mt-4">Popular Tags</p>
+              <div class="card-body mb-3" style="max-height: 200px; overflow-y: auto;">
+                <button class="btn btn">#webdev</button>
+                <button class="btn btn">#vscode</button>
+                <button class="btn btn">#javasctipt</button>
+                <button class="btn btn">#css</button>
+                <button class="btn btn">#json</button>
+                <button class="btn btn">#html</button>
+                <button class="btn btn">#angular</button>
+                <button class="btn btn">#mysql</button>
+                <button class="btn btn">#php</button>
+                <button class="btn btn">#bootstrap</button>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <img class="card-img-top" src="./assets/img/leftcolumn.png">
+              <div class="card-body">
+                <p class="card-text">Fill out this survey and help us moderate our community by becoming a tag moderator
+                  here at DEV.</p>
+              </div>
+            </div>
+            <p style="text-align: justify; font-size: 12px;" class="mt-5">DEV Community A constructive and inclusive
+              social network for software developers. With you every step of your journey.<br><br>
+              Built on Forem — the open source software that powers DEV and other inclusive communities.<br><br>
+              Made with love and Ruby on Rails. DEV Community © 2016 - 2023.</p>
+          </div>
+        </div>
+      </section>
+      <section class="col-md-6" style="margin-top: 90px;">
+        <div class="mb-2">
+          <a class="btn btn-outline-dark btn-no-outline" style="font-weight: bolder;" href="#">Home</a>
+          <a class="btn btn-outline-dark btn-no-outline" href="#">Latest</a>
+          <a class="btn btn-outline-dark btn-no-outline" href="#">Top</a>
+        </div>
+        <div class="card mb-3">
+          <img src="./assets/img/mainimg.webp" class="card-img-top" alt="..." />
+          <div class="card-body" style="padding-left: 50px; padding-right: 50px">
+            <div class="multiple_reactions_engagement">
+              <span class="reaction_engagement_like">
+                <img
+                  src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                  width="24" height="24" />
+                <span id="reaction_engagement_like_count">11</span>
+              </span>
+              <span class="reaction_engagement_unicorn">
+                <img
+                  src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                  width="24" height="24" />
+                <span id="reaction_engagement_unicorn_count">6</span>
+              </span>
+              <span class="reaction_engagement_exploding_head">
+                <img
+                  src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                  width="24" height="24" />
+                <span id="reaction_engagement_exploding_head_count">7</span>
+              </span>
+              <span class="reaction_engagement_raised_hands">
+                <img
+                  src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                  width="24" height="24" />
+                <span id="reaction_engagement_raised_hands_count">6</span>
+              </span>
+              <span class="reaction_engagement_fire">
+                <img
+                  src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                  width="24" height="24" />
+                <span id="reaction_engagement_fire_count">6</span>
+              </span>
+            </div>
+            <h5 class="card-title mt-2">
+              Top 7 Featured DEV Posts from the Past Week
+            </h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="padding-left: 50px; padding-right: 50px">
+          <div class="card-body">
+            <br />
+            <img src="./assets/img/devindex.jpg"
+              style="width: -webkit-fill-available; border-radius: 5px" /><br /><br />
+            <strong class="card-title">Need to stay up-to-date with the most relevant trends in
+              software?</strong>
+            <p class="card-text">Look no further.</p>
+            <br />
+            <p class="card-text">
+              You can do so much more once you create your account. Follow the
+              devs and topics you care about, and keep up-to-date.p>
+              <a href="">
+                <h4 class="card-text">Start Now</h4>
+              </a>
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Happy coding ❤️</small>
+            </p>
+          </div>
+        </div>
+        <div class="card mt-3" style="padding: 20px 50px 20px 50px;">
+          <div class="user-info">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" class="user-image" alt="User Image">
+            <div class="user-name">Lucca Zovedi</div>
+          </div><br>
+          <div class="card-body">
+            <p style="font-size: 20px; font-weight: bolder;">Tech Events are NOT as cool as you think (from an organizer
+              perspective)</p>
+            <ul class="social-icons mt-3">
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983048.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983059.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983063.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983051.png" class="icon-small"></a>
+              </li>
+            </ul>
+            <ul class="social-icons mt-3">
+              <button class="btn-icone">#discuss</button>
+              <button class="btn-icone">#techtalks</button>
+              <button class="btn-icone">#braziliandevs</button>
+              <button class="btn-icone">#frontend</button>
+              <button class="btn"><i class="fa fa-comments"></i> Comment</button>
+            </ul>
+            <div class="save-time-container">
+              <i class="fa fa-star"></i>
+              <span class="time-text">2 min read</span>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3" style="padding: 20px 50px 20px 50px;">
+          <div class="user-info">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" class="user-image" alt="User Image">
+            <div class="user-name">Matheus Gélio</div>
+          </div><br>
+          <div class="card-body">
+            <p style="font-size: 20px; font-weight: bolder;">Process of working in parallel branches in GitHub</p>
+            <ul class="social-icons mt-3">
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983048.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983059.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983063.png" class="icon-small"></a>
+              </li>
+              <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/983/983051.png" class="icon-small"></a>
+              </li>
+            </ul>
+            <ul class="social-icons mt-3">
+              <button class="btn-icone">#opensource</button>
+              <button class="btn-icone">#begginers</button>
+              <button class="btn-icone">#cli</button>
+              <button class="btn"><i class="fa fa-comments"></i> Comment</button>
+            </ul>
+            <div class="save-time-container">
+              <i class="fa fa-star"></i>
+              <span class="time-text">3 min read</span>
+            </div>
+          </div>
+        </div>
+        <br><br>
+      </section>
+      <section class="col-md-3 d-none d-md-block" style="margin-top: 80px;">
+        <div class="card border" style="max-width: 18rem">
+          <strong>
+            <div class="card-header bg-transparent border">#discuss</div>
+          </strong>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                What are the super powers of programmers?
+              </h5>
+              <p class="card-text" style="font-size: 12px">4 comments</p>
+            </a>
+          </div>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                Tech Events are NOT as cool as you think (from an organizer
+                perspective)
+              </h5>
+              <p class="card-text" style="font-size: 12px">16 comments</p>
+            </a>
+          </div>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                Beyond Work, What Are Your Goals for the Next 5 Years?
+              </h5>
+              <p class="card-text" style="font-size: 12px">12 comments</p>
+            </a>
+          </div>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                How Do You Create Inclusive Workplaces?
+              </h5>
+              <p class="card-text" style="font-size: 12px">1 comments</p>
+            </a>
+          </div>
+        </div>
+        <div class="card border mt-3" style="max-width: 18rem">
+          <strong>
+            <div class="card-header bg-transparent border">#watercooler</div>
+          </strong>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">Meme Monday</h5>
+              <p class="card-text" style="font-size: 12px">44 comments</p>
+            </a>
+          </div>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                If you have these three things, then you’re a user (and not a
+                programmer)
+              </h5>
+              <p class="card-text" style="font-size: 12px">7 comments</p>
+            </a>
+          </div>
+          <div class="card-body border">
+            <a href="" style="text-decoration: none; color: black">
+              <h5 class="card-title" style="font-size: 14px">
+                What are the super powers of programmers?
+              </h5>
+              <p class="card-text" style="font-size: 12px">4 comments</p>
+            </a>
+          </div>
+        </div>
+        <div class="vertical-buttons">
+          <button class="btn-right">GPT Pilot - a dev tool that writes 95% of coding tasks</button>
+          <button class="btn-right">8 Habits That Hold Back Your Developer Potential</button>
+          <button class="btn-right">19 Developer Tools to Improve Your Workflow ⚡🚀</button>
+          <button class="btn-right">Python Cheat Sheet for Data Engineers and Data Scientists!</button>
+          <button class="btn-right">📦 React Props: A Visual Guide</button>
+          <button class="btn-right">Automate Your Git Workflow with this Simple Bash Script</button>
+          <button class="btn-right">Top 5+ ReactJS UI Components Libraries for 2023</button>
+        </div>
+        <hr>
+        <div>
+          <p style="font-size: 16px; font-weight: bold;" class="mt-4">recently queried</p>
+          <div class="card-body mb-3" style="max-height: 200px; margin-top: 5px; background-color:#f5f5f500;">
+            <button class="btn-right">#webdev</button>
+            <button class="btn-right">#vscode</button>
+            <button class="btn-right">#javasctipt</button>
+            <button class="btn-right">#css</button>
+            <button class="btn-right">#json</button>
+            <button class="btn-right">#html</button>
+            <button class="btn-right">#angular</button>
+            <button class="btn-right">#mysql</button>
+            <button class="btn-right">#php</button>
+            <button class="btn-right">#bootstrap</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- MAIN -->
+  <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
